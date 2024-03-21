@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Weather App🌤️</h1>
+    <input type="text" id="city-input" placeholder="Enter a city name">
+    <button id="get-weather">Get Weather</button>
+
+    <h2 id="weather-city">Weather in </h2></div>
+    <div id="weather-container">
+
+        <div class="data-container" id="temperature-container">
+            <h3>Temperature 🌻</h3>
+            <p id="temperature"></p>
+        </div>
+        <div class="data-container" id="feels-like-container">
+            <h3>Feels Like😶‍🌫️</h3>
+            <p id="feels-like"></p>
+        </div>
+        <div class="data-container" id="humidity-container">
+            <h3>Humidity😵‍💫</h3>
+            
+            <p id="humidity"></p>
+        </div>
+        <div class="data-container" id="wind-speed-container">
+            <h3>Wind Speed🎐</h3>
+            <p id="wind-speed"></p>
+        </div>
+        <div class="data-container" id="wind-direction-container">
+            <h3>Wind Direction💨</h3>
+            <p id="wind-direction"></p>
+        </div>
+        <div class="data-container" id="cloudiness-container">
+            <h3>Cloudiness⛅</h3>
+            <p id="cloudiness"></p>
+        </div>
+        <div class="data-container" id="sunrise-container">
+            <h3>Sunrise🌅</h3>
+            <p id="sunrise"></p>
+        </div>
+        <div class="data-container" id="sunset-container">
+            <h3>Sunset🌇</h3>
+            <p id="sunset"></p>
+        </div>
+    </div>
+    <div id="error-container"></div>
+    <div class="container-left">
+        <div id="current-date" class="date-display"></div>
+        <div class="container-right">
+            <div id="current-time" class="time-display"></div>
+        </div>
+    </div>
+</body>
+</html>

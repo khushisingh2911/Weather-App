@@ -1,0 +1,179 @@
+body {
+    background-color: #809689;
+    text-align: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1B2827;
+
+}
+h3{
+    font-size: 2rem;
+    color: white;
+}
+#weather-city{
+    text-align: center;
+    font-size: 2rem;
+}
+#city-input {
+    font-size: 1.5rem; /* 1rem font size */
+    border: 2px solid white; /* Solid border with a width of 2px and aqua color */
+    padding: 0.5rem; /* Padding of 0.5 rem, you can adjust as needed */
+    border-radius: 0.5rem; /* Rounded corners with a radius of 0.5 rem */
+    margin: 0.5rem; /* Margin around the input, adjust as needed */
+    outline: none; /* Removes the default focus outline */
+}
+
+#city-input:focus {
+    border-color: white; /* Changes the border color when the input is focused */
+    box-shadow: 0 0 5px #1B2827; /* Adds a glow effect when the input is focused */
+}
+#get-weather {
+    font-size: 1.5rem; /* 1rem font size */
+    border: 2px solid white; /* Solid border with a width of 2px and aqua color */
+    padding: 0.5rem; /* Padding of 0.5 rem, you can adjust as needed */
+    border-radius: 0.5rem; /* Rounded corners with a radius of 0.5 rem */
+    margin: 0.5rem; /* Margin around the input, adjust as needed */
+    outline: none; /* Removes the default focus outline */
+}
+
+#get-weather:focus {
+    border-color: #1B2827; /* Changes the border color when the input is focused */
+    box-shadow: 0 0 5px #1B2827; /* Adds a glow effect when the input is focused */
+}
+#weather-container{
+    display: inline-block;
+    width: 60%;
+    height: 60%;
+    gap: 15cm;
+    margin: 2rem;
+    
+}
+#temperature-container{
+    background-image: url(row-1-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    
+}
+#feels-like-container{
+    background-image: url(row-2-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+#humidity-container{
+    background-image: url(row-3-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+#wind-speed-container{
+    background-image: url(row-4-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+#wind-direction-container{
+    background-image: url(row-5-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+#cloudiness-container{
+    background-image: url(row-6-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+#sunrise-container{
+    background-image: url(row-7-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(251, 254, 254);
+    color: white;
+}
+#sunset-container{
+    background-image: url(row-8-column-1.jpg);
+    border-radius: 10cm;
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    
+}
+.date-display {
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    left: 10%; /* Adjust as needed */
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #1B2827;
+    border-radius: 5px;
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Place the time on the top right */
+  .time-display {
+    position: absolute;
+    top: 20%; /* Adjust as needed */
+    right: 10%; /* Adjust as needed */
+    font-size: 24px;
+    padding: 10px;
+    border: 2px solid #1B2827;
+    border-radius: 5px;
+    
+    box-shadow: 0 2px 4px rgba(252, 252, 252, 0.2);
+  }#current-date {
+    animation: slideInFromLeft 1s ease-out forwards;
+  }
+  
+  /* Apply animation to the current time */
+  #current-time {
+    animation: slideInFromRight 1s ease-out forwards;
+  }
+  @keyframes slideInFromLeft {
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slideInFromRight {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+  }
+  #temperature-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+        box-shadow: 0 0 50px #1B2827; /* Glow effect */
+        transform: scale(1.05);/* Glow effect */
+  }
+  #feels-like-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+    box-shadow: 0 0 50px #1B2827; /* Glow effect */
+    transform: scale(1.05); /* Glow effect */
+  }#humidity-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+    box-shadow: 0 0 50px #1B2827; /* Glow effect */
+    transform: scale(1.05); /* Glow effect */
+  }#wind-speed-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+        box-shadow: 0 0 50px #1B2827; /* Glow effect */
+        transform: scale(1.05);/* Glow effect */
+  }#wind-direction-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+        box-shadow: 0 0 50px #1B2827; /* Glow effect */
+        transform: scale(1.05); /* Glow effect */
+  }#cloudiness-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+        box-shadow: 0 0 50px #1B2827; /* Glow effect */
+        transform: scale(1.05);
+  }#sunrise-container:hover{
+    border-color: #1B2827; /* Gold color for the glow */
+    box-shadow: 0 0 50px #1B2827; /* Glow effect */
+    transform: scale(1.05);
+  }
+    #sunset-container:hover {
+        border-color: #1B2827; /* Gold color for the glow */
+        box-shadow: 0 0 50px #1B2827; /* Glow effect */
+        transform: scale(1.05);
+    }
+    
+  
